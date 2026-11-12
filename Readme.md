@@ -238,5 +238,70 @@ These fundamentals will give you a strong foundation for Docker and DevOps.
 
 
 
+
+### Docker Commands – My Practice
+
+bash
+
+```bash
+
+1. Build Docker Image
+powershell
+docker build -t hello-docker .
+
+2. List Docker Images
+powershell
+docker images
+
+3. Run Docker Container
+powershell
+docker run hello-docker
+
+4. Run Container with Custom Name
+powershell
+docker run --name my-container hello-docker
+
+5. List Running Containers
+powershell
+docker ps
+
+6. List All Containers
+powershell
+docker ps -a
+
+7. Stop a Container
+powershell
+docker stop container_name
+```
+
+
+
+
 docker build -t FILENAME .
 docker run FILENAME
+
+docker run -p 5173:5173 FILENAME
+
+docker run -p 5173:5173 -v "$(pwd):/app" react-docker
+docker run --rm -it -p 5173:5173 -v "${PWD}:/app" -v /app/node_modules react-docker
+docker run --rm -it -p 5173:5173 `
+  -v "${PWD}:/app" `
+  -v react_node_modules:/app/node_modules `
+  react-docker
+
+  docker run --rm -it -p 5173:5173 `
+  -v "${PWD}:/app" `
+  -v react_node_modules:/app/node_modules `
+  react-docker
+
+
+
+```console
+npm create vite@latest my-vite-app
+docker init 
+{ANSER question} last two NO NO[npm run dev]  poer : 5173
+
+sudo docker compose up 
+
+
+```
