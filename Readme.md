@@ -235,3 +235,8 @@ My recommendation: Learn these topics in order:
 10. Docker in CI/CD pipelines
 
 These fundamentals will give you a strong foundation for Docker and DevOps.
+
+
+
+docker build -t FILENAME .
+docker run FILENAME
